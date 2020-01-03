@@ -1,0 +1,23 @@
+<!-- Include Handlebars from a CDN -->
+<script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script>
+ 
+ $.getJSON('data.json', function(data) {
+
+     window.data = data;
+     $.get("template.html", function( html ) {
+  
+        var template = Handlebars.compile(html);
+        $(document).ready(function(){
+            $('#render').html(template(data));
+        });
+        }, 'html');
+
+ })
+
+  
+  
+</script>
+
+<div id="render"></div>

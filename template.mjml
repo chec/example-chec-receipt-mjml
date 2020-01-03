@@ -1,0 +1,223 @@
+<mjml>
+ <mj-head>
+    <!-- Import fonts, external files here -->
+    <mj-title>Merchant Transactional Receipt</mj-title>
+    <mj-preview>Merchant Transactional Receipt</mj-preview>
+
+    <!-- Define device breakpoint here -->
+    <mj-breakpoint width="400px" />
+
+    <mj-attributes>
+      <!-- Define default styles here or create classes for components -->
+      <!-- Default styles END -->
+
+      <!-- Create class components here -->
+      <!-- Global font family -->
+      <mj-all font-family="Helvetica, sans-serif" />
+      <!-- Font sizes -->
+      <mj-class name="x-sml" font-size="12px" />
+      <mj-class name="sml" font-size="14px" />
+      <mj-class name="md" font-size="16px" />
+      <mj-class name="lg" font-size="18px" />
+      <mj-class name="x-lg" font-size="22px" />
+      <!-- Font Weights -->
+      <mj-class name="light" font-weight="300" />
+      <mj-class name="reg" font-weight="400" />
+      <mj-class name="med-w" font-weight="500" />
+      <mj-class name="semi-b" font-weight="600" />
+      <mj-class name="bold" font-weight="700" />
+       <!-- Line Heights -->
+      <mj-class name="g-height" line-height="45px" />
+      <mj-class name="p-height" line-height="35px" />
+      <mj-class name="r-height" line-height="25px" />
+      <mj-class name="s-height" line-height="20px" />
+      <!-- Colors -->
+      <mj-class name="light-grey" color="#DCE4F3" />
+      <mj-class name="grey" color="#8B9DBE" />
+      <mj-class name="black" color="black" />
+      <!-- Background colors -->
+      <mj-class name="bg-grey" background-color="#F1F4FA" />
+      <!-- Border -->
+      <mj-class name="grey-border" border="1px solid #F1F4FA" />
+      <!-- Border Radius -->
+      <mj-class name="radius-sml" border-radius="3px" />
+
+    </mj-attributes>
+  </mj-head>
+
+  <mj-body background-color="white">
+    <mj-wrapper mj-class="grey-border">
+    <mj-section background-color="white" padding-bottom="0px" padding-top="20px" padding="20px 0">
+      <mj-column>
+        <!-- Insert Logo -->
+        <!-- Add src="url" as an attribute -->
+        <mj-image align="left" padding="10px 30px" src="" target="_blank" width="160px" alt="logo"></mj-image>
+        <!-- Insert Logo END -->
+      </mj-column>
+      <mj-column>
+        <mj-text mj-class="light grey x-lg" align="right" padding-bottom="15px" padding-top="0px" padding="10px 25px">Receipt</mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- Greeting -->
+    <mj-section mj-class="section-white" padding-top="30px" padding-bottom="0">
+      <mj-column>
+        <mj-text mj-class="s-height">
+          Hi {{shipping.name}},<br />
+          Thanks for your recent order. Please find all the details below.<br />
+          If you have any questions, feel free to <a href="mailto:your email">contact us</a>.
+        </mj-text>
+      </mj-column>
+    </mj-section>
+    <mj-section padding="0">
+      <mj-column padding="0" width="100%">
+        <mj-divider border-width="1px" border-style="solid" border-color="#DCE4F3" />
+      </mj-column>
+    </mj-section>
+    
+
+    <!-- Order Ref/Order Status -->
+    <mj-section>
+      <mj-column>
+          <mj-text mj-class="med-w sml grey semi-b" align="left" padding="10px 25px">Order Ref.: <span style="color:black; font-weight:400;"mj-class="reg black">{{customer_reference}}</span></mj-text>
+      </mj-column>
+      <mj-column>
+          <mj-text mj-class="med-w sml grey semi-b" align="right" padding="10px 25px">Order Status: <span style="color:black; font-weight:400;"mj-class="reg black">{{status_fulfillment}}</span></mj-text>
+      </mj-column>
+    </mj-section>
+    
+    <!-- Customer Details section -->
+    <mj-section mj-class="bg-grey" padding="20px 0">
+      <mj-column>
+          <mj-text align="left" mj-class="med-w sml grey semi-b">Ordered on:</mj-text>
+          <mj-text padding-top="0" padding-bottom="0">{{created}}</mj-text>
+      </mj-column>
+      <mj-column >
+          <mj-text align="left"mj-class="med-w sml grey semi-b">Customer email:</mj-text>
+          <mj-text padding-top="0" padding-bottom="0">{{customer.email}}</mj-text>
+      </mj-column>
+
+      <mj-column>
+          <mj-text mj-class="med-w sml grey semi-b">Shipping:</mj-text>
+          <mj-text padding-top="0" padding-bottom="0">{{shipping.name}}</mj-text>
+          <mj-text padding-top="0" padding-bottom="0">{{shipping.street}}</mj-text>
+          <mj-text padding-top="0" padding-bottom="0">{{shipping.town_city}}, {{shipping.county_state}}</mj-text>
+          <mj-text padding-top="0" padding-bottom="0">{{shipping.postal_zip_code}}, {{shipping.country}}</mj-text>
+      </mj-column>
+
+    </mj-section>
+    <!-- Order Summary -->
+    <mj-section>
+      <mj-column width="100%">
+        <mj-text mj-class="med-w sml grey semi-b">Order Summary</mj-text>
+      </mj-column>
+    <!-- Divder -->
+      <mj-column width="100%">
+        <mj-divider border-width="1px" border-style="solid" border-color="#DCE4F3" />
+      </mj-column>
+    </mj-section>
+
+    <!-- {% for single_element in array_variable %} -->
+    <mj-raw>
+      {% for item in order.line_items %}
+    </mj-raw>
+
+    <!-- Item details -->
+    <mj-section background-color="#ffffff" padding-left="50px" padding="10px 0">
+       <!-- Data -->
+      <mj-group vertical-align="middle" width="70%">
+        <mj-column>
+          <mj-text align="left">
+            {{ item.product_id }}<br />
+          </mj-text>
+        </mj-column>
+        <!-- Qty -->
+        <mj-column>
+          <mj-text align="left">
+            {{ item.quantiy }}<br />
+          </mj-text>
+        </mj-column>
+        <!-- Price -->
+        <mj-column>
+          <mj-text align="right">
+            <strong>Price:</strong> {{ item.price.formatted_with_symbol }}
+          </mj-text>
+        </mj-column>
+      </mj-group>
+      </mj-section>
+    <mj-raw>
+      {% endfor %}
+    </mj-raw>
+
+    <!-- Total Section -->
+     <mj-section padding="0">
+     <mj-group>
+      <mj-column><!-- Blank Column --></mj-column>
+          <mj-column>
+          <mj-text mj-class="med-w sml grey semi-b" align="right">Subtotal: <span style="color:black; font-weight:400;"mj-class="reg black">{{order.subtotal.formatted_with_symbol}}</span></mj-text>
+      </mj-column>
+    </mj-section>
+    <mj-section padding="0">
+      <mj-column><!-- Blank Column --></mj-column>
+          <mj-column>
+          <mj-text mj-class="med-w sml grey semi-b" align="right">Discount: <span style="color:black; font-weight:400;"mj-class="reg black">-{{order.discount.amount_saved.formatted_with_symbol}}</span></mj-text>
+      </mj-column>
+    </mj-section>
+    <mj-section padding="0">
+      <mj-column><!-- Blank Column --></mj-column>
+          <mj-column>
+          <mj-text mj-class="med-w sml grey semi-b" align="right">Shipping: <span style="color:black; font-weight:400;"mj-class="reg black">{{order.shipping.price.formatted_with_symbol}}</span></mj-text>
+      </mj-column>
+    </mj-section>
+    <mj-section padding="0">
+      <mj-column><!-- Blank Column --></mj-column>
+          <mj-column>
+          <mj-text mj-class="med-w sml grey semi-b" align="right">Tax: <span style="color:black; font-weight:400;"mj-class="reg black">{{order.tax.amount.formatted_with_symbol}}</span></mj-text>
+      </mj-column>
+    </mj-section>
+    <mj-section padding="0">
+      <mj-column><!-- Blank Column --></mj-column>
+          <mj-column>
+          <mj-text mj-class="med-w sml grey semi-b" align="right">Total: <span style="color:black; font-weight:400;"mj-class="reg black">{{order.total.formatted_with_symbol}}</span></mj-text>
+      </mj-column>
+    </mj-section>
+  
+
+        <!-- Billing Details -->
+    <mj-section>
+      <mj-column width="100%">
+        <mj-text mj-class="med-w sml grey semi-b">Billing and Payment</mj-text>
+      </mj-column>
+    <!-- Divder -->
+      <mj-column width="100%">
+        <mj-divider border-width="1px" border-style="solid" border-color="#DCE4F3" />
+      </mj-column>
+    </mj-section>
+    <mj-section background-color="#ffffff" padding="0">
+      <mj-column>
+        <mj-text mj-class="med-w sml semi-b">Billing Details</mj-text>
+          <mj-text padding-top="0" padding-bottom="0">{{client_details.city}} {{client_details.postal_zip_code}}</mj-text>
+          <mj-text padding-top="0" padding-bottom="0">{{client_details.country_name}}</mj-text>
+      </mj-column>
+
+      <mj-column>
+        <mj-text mj-class="med-w sml semi-b">Payment Details</mj-text>
+          <mj-text padding-top="0" padding-bottom="0">{{payments.payment_source.brand}} **** **** **** {{payments.reference}}</mj-text>
+      </mj-column>
+    </mj-section>
+
+    <mj-section>
+      <mj-column width="100%">
+        <mj-divider border-width="1px" border-style="solid" border-color="#DCE4F3" />
+      </mj-column>
+    </mj-section>
+      
+    <mj-section>
+      <mj-column >
+        <mj-text align="center" mj-class="sml">Thank you for your order!</mj-text>
+        <mj-text align="center" mj-class="x-sml grey">If you have any questions about your bill, please get in touch with us by replying to this email!</mj-text>
+      </mj-column>
+    </mj-section>
+  </mj-wrapper>
+  </mj-body>
+</mjml>

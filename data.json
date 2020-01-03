@@ -1,0 +1,975 @@
+{
+  "version": "v1.5",
+  "sandbox": false,
+  "id": "ord_dKvg9l6vl1bB76",
+  "checkout_token_id": "chkt_bR5X842JRr85nz",
+  "cart_id": "cart_kVw7PvLeX0do2e",
+  "customer_reference": "DVNSSTR-2",
+  "created": 1574992067,
+  "status_payment": "partially_paid",
+  "status_fulfillment": "not_fulfilled",
+  "currency": {
+    "code": "USD",
+    "symbol": "$"
+  },
+  "order_value": {
+    "raw": 375.24,
+    "formatted": "375.24",
+    "formatted_with_symbol": "$375.24",
+    "formatted_with_code": "375.24 USD"
+  },
+  "customer": {
+    "email": "test@email.com"
+  },
+  "extrafields": [
+    {
+      "id": "extr_ypbroEAyv1o8n4",
+      "name": "Extrafield",
+      "value": "TEST 123",
+      "type": "text",
+      "required": true
+    },
+    {
+      "id": "extr_1ypbroEL7w8n4e",
+      "name": "Test Field",
+      "value": "TEST 12334",
+      "type": "text",
+      "required": true
+    }
+  ],
+  "shipping": {
+    "name": "Dev Bronson",
+    "street": "102 Duck Creek Road",
+    "street_2": null,
+    "town_city": "Palo Alto",
+    "county_state": "CA",
+    "postal_zip_code": "94122",
+    "country": "US"
+  },
+  "billing": [],
+  "order": {
+    "line_items": [
+      {
+        "id": "item_7RyWOwmK5nEa2V",
+        "product_id": "prod_7ZAMo136xlNJ4x",
+        "product_name": "Discounted Item",
+        "quantity": 1,
+        "price": {
+          "raw": 55,
+          "formatted": "55.00",
+          "formatted_with_symbol": "$55.00",
+          "formatted_with_code": "55.00 USD"
+        },
+        "line_total": {
+          "raw": 55,
+          "formatted": "55.00",
+          "formatted_with_symbol": "$55.00",
+          "formatted_with_code": "55.00 USD"
+        },
+        "variants": [],
+        "type": "standard",
+        "line_total_with_tax": {
+          "raw": 55,
+          "formatted": "55.00",
+          "formatted_with_symbol": "$55.00",
+          "formatted_with_code": "55.00 USD"
+        },
+        "is_taxable": false,
+        "taxable_amount": {
+          "raw": 0,
+          "formatted": "0.00",
+          "formatted_with_symbol": "$0.00",
+          "formatted_with_code": "0.00 USD"
+        },
+        "tax_rate": null,
+        "tax_rate_percentage": null,
+        "tax_amount": {
+          "raw": 0,
+          "formatted": "0.00",
+          "formatted_with_symbol": "$0.00",
+          "formatted_with_code": "0.00 USD"
+        },
+        "tax_lines": []
+      },
+      {
+        "id": "item_1ypbroE658n4ea",
+        "product_id": "prod_RqEv5xdJO5Zz4j",
+        "product_name": "Standard Digital Delivery",
+        "quantity": 1,
+        "price": {
+          "raw": 50,
+          "formatted": "50.00",
+          "formatted_with_symbol": "$50.00",
+          "formatted_with_code": "50.00 USD"
+        },
+        "line_total": {
+          "raw": 50,
+          "formatted": "50.00",
+          "formatted_with_symbol": "$50.00",
+          "formatted_with_code": "50.00 USD"
+        },
+        "variants": [],
+        "type": "standard",
+        "line_total_with_tax": {
+          "raw": 50,
+          "formatted": "50.00",
+          "formatted_with_symbol": "$50.00",
+          "formatted_with_code": "50.00 USD"
+        },
+        "is_taxable": false,
+        "taxable_amount": {
+          "raw": 0,
+          "formatted": "0.00",
+          "formatted_with_symbol": "$0.00",
+          "formatted_with_code": "0.00 USD"
+        },
+        "tax_rate": null,
+        "tax_rate_percentage": null,
+        "tax_amount": {
+          "raw": 0,
+          "formatted": "0.00",
+          "formatted_with_symbol": "$0.00",
+          "formatted_with_code": "0.00 USD"
+        },
+        "tax_lines": []
+      },
+      {
+        "id": "item_dKvg9l6vl1bB76",
+        "product_id": "prod_0egY5ez8Rl3QnA",
+        "product_name": "Delayed Pre-Order Manual Collect",
+        "quantity": 1,
+        "price": {
+          "raw": 100,
+          "formatted": "100.00",
+          "formatted_with_symbol": "$100.00",
+          "formatted_with_code": "100.00 USD"
+        },
+        "line_total": {
+          "raw": 105,
+          "formatted": "105.00",
+          "formatted_with_symbol": "$105.00",
+          "formatted_with_code": "105.00 USD"
+        },
+        "variants": [
+          {
+            "variant_id": "vrnt_ZRjywMp3rl7Y8G",
+            "option_id": "optn_gvRjwOVnml4mNL",
+            "variant_name": "Variant",
+            "option_name": "Option A",
+            "price": {
+              "raw": 5,
+              "formatted": "5.00",
+              "formatted_with_symbol": "5.00",
+              "formatted_with_code": "5.00 "
+            }
+          }
+        ],
+        "type": "preorder",
+        "line_total_with_tax": {
+          "raw": 114.08,
+          "formatted": "114.08",
+          "formatted_with_symbol": "$114.08",
+          "formatted_with_code": "114.08 USD"
+        },
+        "is_taxable": true,
+        "taxable_amount": {
+          "raw": 88.59,
+          "formatted": "88.59",
+          "formatted_with_symbol": "$88.59",
+          "formatted_with_code": "88.59 USD"
+        },
+        "tax_rate": 0.10250000000000001,
+        "tax_rate_percentage": "10.25%",
+        "tax_amount": {
+          "raw": 9.08,
+          "formatted": "9.08",
+          "formatted_with_symbol": "$9.08",
+          "formatted_with_code": "9.08 USD"
+        },
+        "tax_lines": [
+          {
+            "amount": {
+              "raw": 5.32,
+              "formatted": "5.32",
+              "formatted_with_symbol": "$5.32",
+              "formatted_with_code": "5.32 USD"
+            },
+            "rate": 0.06,
+            "rate_percentage": "6%",
+            "type": "state"
+          },
+          {
+            "amount": {
+              "raw": 0.66,
+              "formatted": "0.66",
+              "formatted_with_symbol": "$0.66",
+              "formatted_with_code": "0.66 USD"
+            },
+            "rate": 0.0075,
+            "rate_percentage": "0.75%",
+            "type": "city"
+          },
+          {
+            "amount": {
+              "raw": 0.22,
+              "formatted": "0.22",
+              "formatted_with_symbol": "$0.22",
+              "formatted_with_code": "0.22 USD"
+            },
+            "rate": 0.0025,
+            "rate_percentage": "0.25%",
+            "type": "county"
+          },
+          {
+            "amount": {
+              "raw": 2.88,
+              "formatted": "2.88",
+              "formatted_with_symbol": "$2.88",
+              "formatted_with_code": "2.88 USD"
+            },
+            "rate": 0.0325,
+            "rate_percentage": "3.25%",
+            "type": "district"
+          }
+        ]
+      },
+      {
+        "id": "item_GNqKE50NwdgBLV",
+        "product_id": "prod_QG375vPzLwrMOg",
+        "product_name": "Upfront Preorder",
+        "quantity": 1,
+        "price": {
+          "raw": 10,
+          "formatted": "10.00",
+          "formatted_with_symbol": "$10.00",
+          "formatted_with_code": "10.00 USD"
+        },
+        "line_total": {
+          "raw": 10,
+          "formatted": "10.00",
+          "formatted_with_symbol": "$10.00",
+          "formatted_with_code": "10.00 USD"
+        },
+        "variants": [],
+        "type": "preorder",
+        "line_total_with_tax": {
+          "raw": 10,
+          "formatted": "10.00",
+          "formatted_with_symbol": "$10.00",
+          "formatted_with_code": "10.00 USD"
+        },
+        "is_taxable": false,
+        "taxable_amount": {
+          "raw": 0,
+          "formatted": "0.00",
+          "formatted_with_symbol": "$0.00",
+          "formatted_with_code": "0.00 USD"
+        },
+        "tax_rate": null,
+        "tax_rate_percentage": null,
+        "tax_amount": {
+          "raw": 0,
+          "formatted": "0.00",
+          "formatted_with_symbol": "$0.00",
+          "formatted_with_code": "0.00 USD"
+        },
+        "tax_lines": []
+      },
+      {
+        "id": "item_LkpnNwAxlmXB3b",
+        "product_id": "prod_bWZ3l83Ke5kpEQ",
+        "product_name": "Delayed Pre-Order",
+        "quantity": 1,
+        "price": {
+          "raw": 50,
+          "formatted": "50.00",
+          "formatted_with_symbol": "$50.00",
+          "formatted_with_code": "50.00 USD"
+        },
+        "line_total": {
+          "raw": 50,
+          "formatted": "50.00",
+          "formatted_with_symbol": "$50.00",
+          "formatted_with_code": "50.00 USD"
+        },
+        "variants": [],
+        "type": "preorder",
+        "line_total_with_tax": {
+          "raw": 54.33,
+          "formatted": "54.33",
+          "formatted_with_symbol": "$54.33",
+          "formatted_with_code": "54.33 USD"
+        },
+        "is_taxable": true,
+        "taxable_amount": {
+          "raw": 42.19,
+          "formatted": "42.19",
+          "formatted_with_symbol": "$42.19",
+          "formatted_with_code": "42.19 USD"
+        },
+        "tax_rate": 0.10250000000000001,
+        "tax_rate_percentage": "10.25%",
+        "tax_amount": {
+          "raw": 4.33,
+          "formatted": "4.33",
+          "formatted_with_symbol": "$4.33",
+          "formatted_with_code": "4.33 USD"
+        },
+        "tax_lines": [
+          {
+            "amount": {
+              "raw": 2.53,
+              "formatted": "2.53",
+              "formatted_with_symbol": "$2.53",
+              "formatted_with_code": "2.53 USD"
+            },
+            "rate": 0.06,
+            "rate_percentage": "6%",
+            "type": "state"
+          },
+          {
+            "amount": {
+              "raw": 0.32,
+              "formatted": "0.32",
+              "formatted_with_symbol": "$0.32",
+              "formatted_with_code": "0.32 USD"
+            },
+            "rate": 0.0075,
+            "rate_percentage": "0.75%",
+            "type": "city"
+          },
+          {
+            "amount": {
+              "raw": 0.11,
+              "formatted": "0.11",
+              "formatted_with_symbol": "$0.11",
+              "formatted_with_code": "0.11 USD"
+            },
+            "rate": 0.0025,
+            "rate_percentage": "0.25%",
+            "type": "county"
+          },
+          {
+            "amount": {
+              "raw": 1.37,
+              "formatted": "1.37",
+              "formatted_with_symbol": "$1.37",
+              "formatted_with_code": "1.37 USD"
+            },
+            "rate": 0.0325,
+            "rate_percentage": "3.25%",
+            "type": "district"
+          }
+        ]
+      },
+      {
+        "id": "item_L8XO3wp7lYAzQG",
+        "product_id": "prod_DWy4oGqZKl6Jx2",
+        "product_name": "Standard Product - Physical Delivery",
+        "quantity": 1,
+        "price": {
+          "raw": 50,
+          "formatted": "50.00",
+          "formatted_with_symbol": "$50.00",
+          "formatted_with_code": "50.00 USD"
+        },
+        "line_total": {
+          "raw": 50,
+          "formatted": "50.00",
+          "formatted_with_symbol": "$50.00",
+          "formatted_with_code": "50.00 USD"
+        },
+        "variants": [],
+        "type": "standard",
+        "line_total_with_tax": {
+          "raw": 54.33,
+          "formatted": "54.33",
+          "formatted_with_symbol": "$54.33",
+          "formatted_with_code": "54.33 USD"
+        },
+        "is_taxable": true,
+        "taxable_amount": {
+          "raw": 42.19,
+          "formatted": "42.19",
+          "formatted_with_symbol": "$42.19",
+          "formatted_with_code": "42.19 USD"
+        },
+        "tax_rate": 0.10250000000000001,
+        "tax_rate_percentage": "10.25%",
+        "tax_amount": {
+          "raw": 4.33,
+          "formatted": "4.33",
+          "formatted_with_symbol": "$4.33",
+          "formatted_with_code": "4.33 USD"
+        },
+        "tax_lines": [
+          {
+            "amount": {
+              "raw": 2.53,
+              "formatted": "2.53",
+              "formatted_with_symbol": "$2.53",
+              "formatted_with_code": "2.53 USD"
+            },
+            "rate": 0.06,
+            "rate_percentage": "6%",
+            "type": "state"
+          },
+          {
+            "amount": {
+              "raw": 0.32,
+              "formatted": "0.32",
+              "formatted_with_symbol": "$0.32",
+              "formatted_with_code": "0.32 USD"
+            },
+            "rate": 0.0075,
+            "rate_percentage": "0.75%",
+            "type": "city"
+          },
+          {
+            "amount": {
+              "raw": 0.11,
+              "formatted": "0.11",
+              "formatted_with_symbol": "$0.11",
+              "formatted_with_code": "0.11 USD"
+            },
+            "rate": 0.0025,
+            "rate_percentage": "0.25%",
+            "type": "county"
+          },
+          {
+            "amount": {
+              "raw": 1.37,
+              "formatted": "1.37",
+              "formatted_with_symbol": "$1.37",
+              "formatted_with_code": "1.37 USD"
+            },
+            "rate": 0.0325,
+            "rate_percentage": "3.25%",
+            "type": "district"
+          }
+        ]
+      }
+    ],
+    "subtotal": {
+      "raw": 320,
+      "formatted": "320.00",
+      "formatted_with_symbol": "$320.00",
+      "formatted_with_code": "320.00 USD"
+    },
+    "discount": {
+      "type": "fixed",
+      "code": "T1",
+      "value": "50.00",
+      "product_id": "prod_7ZAMo136xlNJ4x",
+      "amount_saved": {
+        "raw": 50,
+        "formatted": "50.00",
+        "formatted_with_symbol": "$50.00",
+        "formatted_with_code": "50.00 USD"
+      }
+    },
+    "giftcard": [],
+    "shipping": {
+      "id": "ship_O3bR5X1dPlnzdj",
+      "description": "Default",
+      "price": {
+        "raw": 87.5,
+        "formatted": "87.50",
+        "formatted_with_symbol": "$87.50",
+        "formatted_with_code": "87.50 USD"
+      }
+    },
+    "tax": {
+      "amount": {
+        "raw": 17.74,
+        "formatted": "17.74",
+        "formatted_with_symbol": "$17.74",
+        "formatted_with_code": "17.74 USD"
+      },
+      "included_in_price": false,
+      "breakdown": [
+        {
+          "amount": {
+            "raw": 10.38,
+            "formatted": "10.38",
+            "formatted_with_symbol": "$10.38",
+            "formatted_with_code": "10.38 USD"
+          },
+          "rate": 0.06,
+          "rate_percentage": "6%",
+          "type": "state"
+        },
+        {
+          "amount": {
+            "raw": 1.3,
+            "formatted": "1.30",
+            "formatted_with_symbol": "$1.30",
+            "formatted_with_code": "1.30 USD"
+          },
+          "rate": 0.0075,
+          "rate_percentage": "0.75%",
+          "type": "city"
+        },
+        {
+          "amount": {
+            "raw": 0.44,
+            "formatted": "0.44",
+            "formatted_with_symbol": "$0.44",
+            "formatted_with_code": "0.44 USD"
+          },
+          "rate": 0.0025,
+          "rate_percentage": "0.25%",
+          "type": "county"
+        },
+        {
+          "amount": {
+            "raw": 5.62,
+            "formatted": "5.62",
+            "formatted_with_symbol": "$5.62",
+            "formatted_with_code": "5.62 USD"
+          },
+          "rate": 0.0325,
+          "rate_percentage": "3.25%",
+          "type": "district"
+        }
+      ],
+      "zone": {
+        "country": "US",
+        "region": "CA",
+        "postal_zip_code": "94122",
+        "ip_address": null
+      },
+      "provider": "chec",
+      "provider_type": "native",
+      "rate": 0.1025,
+      "rate_percentage": "10.25%"
+    },
+    "total": {
+      "raw": 357.5,
+      "formatted": "357.50",
+      "formatted_with_symbol": "$357.50",
+      "formatted_with_code": "357.50 USD"
+    },
+    "total_with_tax": {
+      "raw": 375.24,
+      "formatted": "375.24",
+      "formatted_with_symbol": "$375.24",
+      "formatted_with_code": "375.24 USD"
+    },
+    "pay_what_you_want": {
+      "enabled": false
+    },
+    "total_outstanding": {
+      "raw": 213.41,
+      "formatted": "213.41",
+      "formatted_with_symbol": "$213.41",
+      "formatted_with_code": "213.41 USD"
+    },
+    "total_paid": {
+      "raw": 161.83,
+      "formatted": "161.83",
+      "formatted_with_symbol": "$161.83",
+      "formatted_with_code": "161.83 USD"
+    }
+  },
+  "payments": [
+    {
+      "id": "pymnt_GNqKE50NwdgBLV",
+      "gateway_transaction_id": "ch_1FjyaEGbVSOzQHgUIs7jLbkg",
+      "created": 1574992066,
+      "type": "card",
+      "gateway": "stripe",
+      "reference": 4242,
+      "amount": {
+        "raw": 161.83,
+        "formatted": "161.83",
+        "formatted_with_symbol": "$161.83",
+        "formatted_with_code": "161.83 USD"
+      },
+      "is_refunded": false,
+      "refund_date": null,
+      "payment_source": {
+        "brand": "visa",
+        "country": "US",
+        "billing_zip_postal_code": "94104",
+        "tax_billing_country": "US"
+      }
+    }
+  ],
+  "future_payments": [
+    {
+      "id": "fut_pymnt_GNqKE50NwdgBLV",
+      "type": "preorder",
+      "status": "not_initiated",
+      "charge_type": "manual",
+      "amount": {
+        "raw": 134.08,
+        "formatted": "134.08",
+        "formatted_with_symbol": "$134.08",
+        "formatted_with_code": "134.08 USD"
+      },
+      "breakdown": {
+        "subtotal": {
+          "raw": 105,
+          "formatted": "105.00",
+          "formatted_with_symbol": "$105.00",
+          "formatted_with_code": "105.00 USD"
+        },
+        "discount": {
+          "raw": 0,
+          "formatted": "0.00",
+          "formatted_with_symbol": "$0.00",
+          "formatted_with_code": "0.00 USD"
+        },
+        "tax": {
+          "raw": 9.08,
+          "formatted": "9.08",
+          "formatted_with_symbol": "$9.08",
+          "formatted_with_code": "9.08 USD"
+        },
+        "shipping": {
+          "raw": 20,
+          "formatted": "20.00",
+          "formatted_with_symbol": "$20.00",
+          "formatted_with_code": "20.00 USD"
+        }
+      },
+      "currency": "USD",
+      "gateway": "stripe",
+      "payment_source": {
+        "brand": "Visa",
+        "country": "US",
+        "billing_zip_postal_code": "94104"
+      },
+      "details": {
+        "product_name": "Delayed Pre-Order Manual Collect"
+      },
+      "created": 1574992067,
+      "charge_date": null,
+      "charge_timezone": null,
+      "in_dunning": false,
+      "failed_attempts": 0,
+      "last_failed_attempt": null,
+      "next_attempt": null,
+      "linked": {
+        "line_item_id": "item_dKvg9l6vl1bB76",
+        "preorder_id": "pre_ord_LkpnNwAxlmXB3b"
+      }
+    },
+    {
+      "id": "fut_pymnt_LkpnNwAxlmXB3b",
+      "type": "preorder",
+      "status": "awaiting_charge_date",
+      "charge_type": "automatic",
+      "amount": {
+        "raw": 79.33,
+        "formatted": "79.33",
+        "formatted_with_symbol": "$79.33",
+        "formatted_with_code": "79.33 USD"
+      },
+      "breakdown": {
+        "subtotal": {
+          "raw": 50,
+          "formatted": "50.00",
+          "formatted_with_symbol": "$50.00",
+          "formatted_with_code": "50.00 USD"
+        },
+        "discount": {
+          "raw": 0,
+          "formatted": "0.00",
+          "formatted_with_symbol": "$0.00",
+          "formatted_with_code": "0.00 USD"
+        },
+        "tax": {
+          "raw": 4.33,
+          "formatted": "4.33",
+          "formatted_with_symbol": "$4.33",
+          "formatted_with_code": "4.33 USD"
+        },
+        "shipping": {
+          "raw": 25,
+          "formatted": "25.00",
+          "formatted_with_symbol": "$25.00",
+          "formatted_with_code": "25.00 USD"
+        }
+      },
+      "currency": "USD",
+      "gateway": "stripe",
+      "payment_source": {
+        "brand": "Visa",
+        "country": "US",
+        "billing_zip_postal_code": "94104"
+      },
+      "details": {
+        "product_name": "Delayed Pre-Order"
+      },
+      "created": 1574992068,
+      "charge_date": 1545868800,
+      "charge_timezone": "UM8",
+      "in_dunning": false,
+      "failed_attempts": 0,
+      "last_failed_attempt": null,
+      "next_attempt": null,
+      "linked": {
+        "line_item_id": "item_LkpnNwAxlmXB3b",
+        "preorder_id": "pre_ord_LbO6J5aLoEjpKG"
+      }
+    }
+  ],
+  "refunds": [],
+  "fulfillment": {
+    "physical": {
+      "items": [
+        {
+          "id": "ful_LkpnNwAxlmXB3b",
+          "shipping_method_id": "ship_O3bR5X1dPlnzdj",
+          "line_item_id": "item_dKvg9l6vl1bB76",
+          "product_id": "prod_0egY5ez8Rl3QnA",
+          "shipping_description": "Default",
+          "provider": "chec",
+          "provider_type": "native_shipping",
+          "product_name": "Delayed Pre-Order Manual Collect",
+          "variants": [
+            {
+              "variant_id": "vrnt_ZRjywMp3rl7Y8G",
+              "option_id": "optn_gvRjwOVnml4mNL",
+              "variant_name": "Variant",
+              "option_name": "Option A"
+            }
+          ],
+          "status": "not_fulfilled",
+          "quantity": {
+            "total": 1,
+            "fulfilled": 0,
+            "remaining": 1
+          },
+          "last_updated": 1574992068,
+          "linked_shipments": []
+        },
+        {
+          "id": "ful_L8XO3wp7lYAzQG",
+          "shipping_method_id": "ship_O3bR5X1dPlnzdj",
+          "line_item_id": "item_LkpnNwAxlmXB3b",
+          "product_id": "prod_bWZ3l83Ke5kpEQ",
+          "shipping_description": "Default",
+          "provider": "chec",
+          "provider_type": "native_shipping",
+          "product_name": "Delayed Pre-Order",
+          "variants": [],
+          "status": "not_fulfilled",
+          "quantity": {
+            "total": 1,
+            "fulfilled": 0,
+            "remaining": 1
+          },
+          "last_updated": 1574992068,
+          "linked_shipments": []
+        },
+        {
+          "id": "ful_LbO6J5aLoEjpKG",
+          "shipping_method_id": "ship_O3bR5X1dPlnzdj",
+          "line_item_id": "item_L8XO3wp7lYAzQG",
+          "product_id": "prod_DWy4oGqZKl6Jx2",
+          "shipping_description": "Default",
+          "provider": "chec",
+          "provider_type": "native_shipping",
+          "product_name": "Standard Product - Physical Delivery",
+          "variants": [],
+          "status": "not_fulfilled",
+          "quantity": {
+            "total": 1,
+            "fulfilled": 0,
+            "remaining": 1
+          },
+          "last_updated": 1574992068,
+          "linked_shipments": []
+        }
+      ],
+      "shipments": []
+    },
+    "digital": {
+      "downloads": [
+        {
+          "provider": "chec",
+          "provider_type": "native_digital",
+          "line_item_id": "item_1ypbroE658n4ea",
+          "product_id": "prod_RqEv5xdJO5Zz4j",
+          "product_name": "Standard Digital Delivery",
+          "packages": [
+            {
+              "id": "dwnld_dKvg9l6vl1bB76",
+              "name": "chec.manifold.png",
+              "access_link": "http://api.chec.local/fulfill/ord_dKvg9l6vl1bB76/ord_dKvg9l6vl1bB76",
+              "ext": "PNG",
+              "size": "38.71 KB",
+              "size_in_bytes": 39639,
+              "remaining_downloads": null
+            }
+          ],
+          "lifespan": {
+            "expires": false,
+            "expiry_date": null,
+            "duration": null,
+            "period": null,
+            "download_limit": "unlimited",
+            "human": "Download links do not expire, and can be accessed unlimited time(s)"
+          },
+          "is_expired": false,
+          "is_access_revoked": false
+        }
+      ],
+      "webhooks": []
+    }
+  },
+  "conditionals": {
+    "collected_fullname": false,
+    "collected_shipping_address": false,
+    "collected_billing_address": false,
+    "collected_extrafields": false,
+    "collected_tax": false,
+    "collected_eu_vat_moss_evidence": false,
+    "has_physical_fulfillment": false,
+    "has_digital_fulfillment": false,
+    "has_extend_fulfillment": false,
+    "has_webhook_fulfillment": false,
+    "has_extend_apps": false,
+    "has_pay_what_you_want": false,
+    "has_discounts": false,
+    "has_preorder_items": false,
+    "has_subscription_items": false,
+    "is_free": true,
+    "is_fulfilled": false
+  },
+  "fraud": {
+    "provider": "siftscience",
+    "response": {
+      "score": 0.0608938678496301,
+      "reasons": [
+        {
+          "name": "Age of first transaction",
+          "value": "38.02 days"
+        },
+        {
+          "name": "Email Domain TLD",
+          "value": "io"
+        },
+        {
+          "name": "Number of users with the same device",
+          "value": "3",
+          "details": {
+            "users": "devan@trychec.com,devan.koshal@gmail.com"
+          }
+        }
+      ],
+      "user_id": "devan@chec.io"
+    }
+  },
+  "client_details": {
+    "ip_address": "2604:5500:12:2ff:240b:b205:dce8:79cb",
+    "country_code": "US",
+    "country_name": "United States",
+    "region_code": "CA",
+    "region_name": "California",
+    "city": "San Francisco",
+    "postal_zip_code": "94103"
+  },
+  "metadata": [],
+  "preorders": [
+    {
+      "id": "pre_ord_LkpnNwAxlmXB3b",
+      "preorder_id": "pre_p7ZAMo1xwNJ4xX",
+      "line_item_id": "item_dKvg9l6vl1bB76",
+      "product_id": "prod_0egY5ez8Rl3QnA",
+      "product_name": "Delayed Pre-Order Manual Collect",
+      "type": "delayed",
+      "amount": {
+        "raw": 134.08,
+        "formatted": "134.08",
+        "formatted_with_symbol": "$134.08",
+        "formatted_with_code": "134.08 USD"
+      },
+      "has_availability_date": true,
+      "has_charge_date": false,
+      "availability": {
+        "date": 1572480000,
+        "timezone": "UM12",
+        "details": ""
+      },
+      "charge": null,
+      "links": ""
+    },
+    {
+      "id": "pre_ord_L8XO3wp7lYAzQG",
+      "preorder_id": "pre_YgnZO5kg57MNqG",
+      "line_item_id": "item_GNqKE50NwdgBLV",
+      "product_id": "prod_QG375vPzLwrMOg",
+      "product_name": "Upfront Preorder",
+      "type": "upfront",
+      "amount": {
+        "raw": 0,
+        "formatted": "0.00",
+        "formatted_with_symbol": "$0.00",
+        "formatted_with_code": "0.00 USD"
+      },
+      "has_availability_date": true,
+      "has_charge_date": false,
+      "availability": {
+        "date": 1546041600,
+        "timezone": "UM8",
+        "details": ""
+      },
+      "charge": null,
+      "links": ""
+    },
+    {
+      "id": "pre_ord_LbO6J5aLoEjpKG",
+      "preorder_id": "pre_DeN1ql945z3ymG",
+      "line_item_id": "item_LkpnNwAxlmXB3b",
+      "product_id": "prod_bWZ3l83Ke5kpEQ",
+      "product_name": "Delayed Pre-Order",
+      "type": "delayed",
+      "amount": {
+        "raw": 79.33,
+        "formatted": "79.33",
+        "formatted_with_symbol": "$79.33",
+        "formatted_with_code": "79.33 USD"
+      },
+      "has_availability_date": true,
+      "has_charge_date": true,
+      "availability": {
+        "date": 0,
+        "timezone": "UM8",
+        "details": ""
+      },
+      "charge": {
+        "date": 1545868800,
+        "timezone": "UM8",
+        "details": ""
+      },
+      "links": ""
+    }
+  ],
+  "collected": {
+    "fullname": false,
+    "shipping_address": false,
+    "billing_address": false,
+    "extrafields": false,
+    "tax": false,
+    "eu_vat_moss_evidence": false
+  },
+  "has": {
+    "physical_fulfillment": false,
+    "digital_fulfillment": false,
+    "extend_fulfillment": false,
+    "webhook_fulfillment": false,
+    "extend_apps": false,
+    "pay_what_you_want": false,
+    "discounts": false,
+    "preorder_items": false,
+    "subscription_items": false
+  },
+  "is": {
+    "free": true,
+    "fulfilled": false
+  }
+}
