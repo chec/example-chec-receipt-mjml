@@ -52,7 +52,7 @@
       {
         "id": "item_7RyWOwmK5nEa2V",
         "product_id": "prod_7ZAMo136xlNJ4x",
-        "product_name": "Discounted Item",
+        "product_name": "Phone Case",
         "quantity": 1,
         "price": {
           "raw": 55,
@@ -94,7 +94,7 @@
       {
         "id": "item_1ypbroE658n4ea",
         "product_id": "prod_RqEv5xdJO5Zz4j",
-        "product_name": "Standard Digital Delivery",
+        "product_name": "Graphic T-shirt",
         "quantity": 1,
         "price": {
           "raw": 50,
@@ -136,7 +136,7 @@
       {
         "id": "item_dKvg9l6vl1bB76",
         "product_id": "prod_0egY5ez8Rl3QnA",
-        "product_name": "Delayed Pre-Order Manual Collect",
+        "product_name": "Backpack",
         "quantity": 1,
         "price": {
           "raw": 100,
@@ -236,7 +236,7 @@
       {
         "id": "item_GNqKE50NwdgBLV",
         "product_id": "prod_QG375vPzLwrMOg",
-        "product_name": "Upfront Preorder",
+        "product_name": "Pen",
         "quantity": 1,
         "price": {
           "raw": 10,
@@ -278,7 +278,7 @@
       {
         "id": "item_LkpnNwAxlmXB3b",
         "product_id": "prod_bWZ3l83Ke5kpEQ",
-        "product_name": "Delayed Pre-Order",
+        "product_name": "Jeans",
         "quantity": 1,
         "price": {
           "raw": 50,
@@ -365,7 +365,7 @@
       {
         "id": "item_L8XO3wp7lYAzQG",
         "product_id": "prod_DWy4oGqZKl6Jx2",
-        "product_name": "Standard Product - Physical Delivery",
+        "product_name": "Blouse",
         "quantity": 1,
         "price": {
           "raw": 50,

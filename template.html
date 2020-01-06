@@ -70,11 +70,6 @@
         width: 33.333333333333336% !important;
         max-width: 33.333333333333336%;
       }
-
-      .mj-column-per-70 {
-        width: 70% !important;
-        max-width: 70%;
-      }
     }
   </style>
   <style type="text/css">
@@ -597,7 +592,6 @@
               </td>
             </tr>
           <![endif]-->
-              <!-- {% for single_element in array_variable %} -->{% for item in order.line_items %}
               <!-- Item details -->
               <!--[if mso | IE]>
             <tr>
@@ -624,23 +618,32 @@
                         <!-- Data -->
                         <!--[if mso | IE]>
             <td
-               class="" style="vertical-align:middle;width:383.6px;"
+               class="" style="width:548px;"
             >
           <![endif]-->
-                        <div class="mj-column-per-70 mj-outlook-group-fix" style="font-size:0;line-height:0;text-align:left;display:inline-block;width:100%;direction:ltr;vertical-align:middle;">
+                        <div class="mj-column-per-100 mj-outlook-group-fix" style="font-size:0;line-height:0;text-align:left;display:inline-block;width:100%;direction:ltr;">
                           <!--[if mso | IE]>
         <table  role="presentation" border="0" cellpadding="0" cellspacing="0">
           <tr>
         
               <td
-                 style="vertical-align:top;width:127px;"
+                 style="vertical-align:top;width:182px;"
               >
               <![endif]-->
                           <div class="mj-column-per-33-333333333333336 mj-outlook-group-fix" style="font-size:0px;text-align:left;direction:ltr;display:inline-block;vertical-align:top;width:33%;">
                             <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="vertical-align:top;" width="100%">
                               <tr>
                                 <td align="left" style="font-size:0px;padding:10px 25px;word-break:break-word;">
-                                  <div style="font-family:Helvetica, sans-serif;font-size:13px;line-height:1;text-align:left;color:#000000;">{{ item.product_id }}<br /></div>
+                                  <div style="font-family:Helvetica, sans-serif;font-size:13px;line-height:1;text-align:left;color:#000000;"><strong>Item</strong>
+                                    <mj-spacer height="20px" />
+                                  </div>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td align="left" style="font-size:0px;padding:10px 25px;word-break:break-word;">
+                                  <div style="font-family:Helvetica, sans-serif;font-size:13px;line-height:1;text-align:left;color:#000000;">{{#order.line_items}}
+                                      {{product_name}} <br /><br />
+                                    {{/order.line_items}}</div>
                                 </td>
                               </tr>
                             </table>
@@ -651,14 +654,23 @@
                           <!-- Qty -->
                           <!--[if mso | IE]>
               <td
-                 style="vertical-align:top;width:127px;"
+                 style="vertical-align:top;width:182px;"
               >
               <![endif]-->
                           <div class="mj-column-per-33-333333333333336 mj-outlook-group-fix" style="font-size:0px;text-align:left;direction:ltr;display:inline-block;vertical-align:top;width:33%;">
                             <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="vertical-align:top;" width="100%">
                               <tr>
-                                <td align="left" style="font-size:0px;padding:10px 25px;word-break:break-word;">
-                                  <div style="font-family:Helvetica, sans-serif;font-size:13px;line-height:1;text-align:left;color:#000000;">{{ item.quantiy }}<br /></div>
+                                <td align="center" style="font-size:0px;padding:10px 25px;word-break:break-word;">
+                                  <div style="font-family:Helvetica, sans-serif;font-size:13px;line-height:1;text-align:center;color:#000000;"><strong>Qty</strong>
+                                    <mj-spacer height="20px" />
+                                  </div>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td align="center" style="font-size:0px;padding:10px 25px;word-break:break-word;">
+                                  <div style="font-family:Helvetica, sans-serif;font-size:13px;line-height:1;text-align:center;color:#000000;">{{#order.line_items}}
+                                      {{quantity}} <br /><br />
+                                    {{/order.line_items}}</div>
                                 </td>
                               </tr>
                             </table>
@@ -669,14 +681,23 @@
                           <!-- Price -->
                           <!--[if mso | IE]>
               <td
-                 style="vertical-align:top;width:127px;"
+                 style="vertical-align:top;width:182px;"
               >
               <![endif]-->
                           <div class="mj-column-per-33-333333333333336 mj-outlook-group-fix" style="font-size:0px;text-align:left;direction:ltr;display:inline-block;vertical-align:top;width:33%;">
                             <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="vertical-align:top;" width="100%">
                               <tr>
                                 <td align="right" style="font-size:0px;padding:10px 25px;word-break:break-word;">
-                                  <div style="font-family:Helvetica, sans-serif;font-size:13px;line-height:1;text-align:right;color:#000000;"><strong>Price:</strong> {{ item.price.formatted_with_symbol }}</div>
+                                  <div style="font-family:Helvetica, sans-serif;font-size:13px;line-height:1;text-align:right;color:#000000;"><strong>Price</strong>
+                                    <mj-spacer height="20px" />
+                                  </div>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td align="right" style="font-size:0px;padding:10px 25px;word-break:break-word;">
+                                  <div style="font-family:Helvetica, sans-serif;font-size:13px;line-height:1;text-align:right;color:#000000;">{{#order.line_items}}
+                                      {{price.formatted_with_symbol}} <br /><br />
+                                    {{/order.line_items}}</div>
                                 </td>
                               </tr>
                             </table>
@@ -707,7 +728,7 @@
       
               </td>
             </tr>
-          <![endif]--> {% endfor %}
+          <![endif]-->
               <!-- Total Section -->
               <!--[if mso | IE]>
             <tr>
@@ -760,7 +781,7 @@
                             <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="vertical-align:top;" width="100%">
                               <tr>
                                 <td align="right" style="font-size:0px;padding:10px 25px;word-break:break-word;">
-                                  <div style="font-family:Helvetica, sans-serif;font-size:14px;font-weight:600;line-height:1;text-align:right;color:#8B9DBE;">Subtotal: <span style="color:black; font-weight:400;" mj-class="reg black">{{order.subtotal.formatted_with_symbol}}</span></div>
+                                  <div style="font-family:Helvetica, sans-serif;font-size:13px;font-weight:600;line-height:1;text-align:right;color:#8B9DBE;">Subtotal: <span style="color:black; font-weight:400;" mj-class="reg black">{{order.subtotal.formatted_with_symbol}}</span></div>
                                 </td>
                               </tr>
                             </table>
@@ -833,7 +854,7 @@
                           <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="vertical-align:top;" width="100%">
                             <tr>
                               <td align="right" style="font-size:0px;padding:10px 25px;word-break:break-word;">
-                                <div style="font-family:Helvetica, sans-serif;font-size:14px;font-weight:600;line-height:1;text-align:right;color:#8B9DBE;">Discount: <span style="color:black; font-weight:400;" mj-class="reg black">-{{order.discount.amount_saved.formatted_with_symbol}}</span></div>
+                                <div style="font-family:Helvetica, sans-serif;font-size:13px;font-weight:600;line-height:1;text-align:right;color:#8B9DBE;">Discount: <span style="color:black; font-weight:400;" mj-class="reg black">-{{order.discount.amount_saved.formatted_with_symbol}}</span></div>
                               </td>
                             </tr>
                           </table>
@@ -899,7 +920,7 @@
                           <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="vertical-align:top;" width="100%">
                             <tr>
                               <td align="right" style="font-size:0px;padding:10px 25px;word-break:break-word;">
-                                <div style="font-family:Helvetica, sans-serif;font-size:14px;font-weight:600;line-height:1;text-align:right;color:#8B9DBE;">Shipping: <span style="color:black; font-weight:400;" mj-class="reg black">{{order.shipping.price.formatted_with_symbol}}</span></div>
+                                <div style="font-family:Helvetica, sans-serif;font-size:13px;font-weight:600;line-height:1;text-align:right;color:#8B9DBE;">Shipping: <span style="color:black; font-weight:400;" mj-class="reg black">{{order.shipping.price.formatted_with_symbol}}</span></div>
                               </td>
                             </tr>
                           </table>
@@ -965,7 +986,7 @@
                           <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="vertical-align:top;" width="100%">
                             <tr>
                               <td align="right" style="font-size:0px;padding:10px 25px;word-break:break-word;">
-                                <div style="font-family:Helvetica, sans-serif;font-size:14px;font-weight:600;line-height:1;text-align:right;color:#8B9DBE;">Tax: <span style="color:black; font-weight:400;" mj-class="reg black">{{order.tax.amount.formatted_with_symbol}}</span></div>
+                                <div style="font-family:Helvetica, sans-serif;font-size:13px;font-weight:600;line-height:1;text-align:right;color:#8B9DBE;">Tax: <span style="color:black; font-weight:400;" mj-class="reg black">{{order.tax.amount.formatted_with_symbol}}</span></div>
                               </td>
                             </tr>
                           </table>
@@ -1031,7 +1052,7 @@
                           <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="vertical-align:top;" width="100%">
                             <tr>
                               <td align="right" style="font-size:0px;padding:10px 25px;word-break:break-word;">
-                                <div style="font-family:Helvetica, sans-serif;font-size:14px;font-weight:600;line-height:1;text-align:right;color:#8B9DBE;">Total: <span style="color:black; font-weight:400;" mj-class="reg black">{{order.total.formatted_with_symbol}}</span></div>
+                                <div style="font-family:Helvetica, sans-serif;font-size:13px;font-weight:600;line-height:1;text-align:right;color:#8B9DBE;">Total: <span style="color:black; font-weight:400;" mj-class="reg black">{{order.total.formatted_with_symbol}}</span></div>
                               </td>
                             </tr>
                           </table>

@@ -117,68 +117,78 @@
       </mj-column>
     </mj-section>
 
-    <!-- {% for single_element in array_variable %} -->
-    <mj-raw>
-      {% for item in order.line_items %}
-    </mj-raw>
-
     <!-- Item details -->
     <mj-section background-color="#ffffff" padding-left="50px" padding="10px 0">
        <!-- Data -->
-      <mj-group vertical-align="middle" width="70%">
+      <mj-group  width="100%">
         <mj-column>
+         <mj-text align="left">
+          <strong>Item</strong>
+          <mj-spacer height="20px" />
+          </mj-text>
           <mj-text align="left">
-            {{ item.product_id }}<br />
+          {{#order.line_items}}
+            {{product_name}} <br/><br/>
+          {{/order.line_items}}
           </mj-text>
         </mj-column>
         <!-- Qty -->
         <mj-column>
-          <mj-text align="left">
-            {{ item.quantiy }}<br />
+          <mj-text align="center">
+          <strong>Qty</strong>
+          <mj-spacer height="20px" />
+          </mj-text>
+          <mj-text align="center">
+          {{#order.line_items}}
+            {{quantity}} <br/><br/>
+          {{/order.line_items}}
           </mj-text>
         </mj-column>
         <!-- Price -->
         <mj-column>
+        <mj-text align="right">
+          <strong>Price</strong>
+          <mj-spacer height="20px" />
+          </mj-text>
           <mj-text align="right">
-            <strong>Price:</strong> {{ item.price.formatted_with_symbol }}
+          {{#order.line_items}}
+            {{price.formatted_with_symbol}} <br/><br/>
+          {{/order.line_items}}
           </mj-text>
         </mj-column>
       </mj-group>
       </mj-section>
-    <mj-raw>
-      {% endfor %}
-    </mj-raw>
 
     <!-- Total Section -->
      <mj-section padding="0">
      <mj-group>
       <mj-column><!-- Blank Column --></mj-column>
           <mj-column>
-          <mj-text mj-class="med-w sml grey semi-b" align="right">Subtotal: <span style="color:black; font-weight:400;"mj-class="reg black">{{order.subtotal.formatted_with_symbol}}</span></mj-text>
+          <mj-text mj-class="med-w grey semi-b" align="right">Subtotal: <span style="color:black; font-weight:400;"mj-class="reg black">{{order.subtotal.formatted_with_symbol}}</span></mj-text>
       </mj-column>
     </mj-section>
     <mj-section padding="0">
       <mj-column><!-- Blank Column --></mj-column>
           <mj-column>
-          <mj-text mj-class="med-w sml grey semi-b" align="right">Discount: <span style="color:black; font-weight:400;"mj-class="reg black">-{{order.discount.amount_saved.formatted_with_symbol}}</span></mj-text>
+          <mj-text mj-class="med-w grey semi-b" align="right">Discount: <span style="color:black; font-weight:400;"mj-class="reg black">-{{order.discount.amount_saved.formatted_with_symbol}}</span></mj-text>
       </mj-column>
     </mj-section>
     <mj-section padding="0">
       <mj-column><!-- Blank Column --></mj-column>
           <mj-column>
-          <mj-text mj-class="med-w sml grey semi-b" align="right">Shipping: <span style="color:black; font-weight:400;"mj-class="reg black">{{order.shipping.price.formatted_with_symbol}}</span></mj-text>
+          <mj-text mj-class="med-w grey semi-b" align="right">Shipping: <span style="color:black; font-weight:400;"mj-class="reg black">{{order.shipping.price.formatted_with_symbol}}</span></mj-text>
       </mj-column>
     </mj-section>
     <mj-section padding="0">
       <mj-column><!-- Blank Column --></mj-column>
           <mj-column>
-          <mj-text mj-class="med-w sml grey semi-b" align="right">Tax: <span style="color:black; font-weight:400;"mj-class="reg black">{{order.tax.amount.formatted_with_symbol}}</span></mj-text>
+          <mj-text mj-class="med-w grey semi-b" align="right">Tax: <span style="color:black; font-weight:400;"mj-class="reg black">{{order.tax.amount.formatted_with_symbol}}</span></mj-text>
       </mj-column>
     </mj-section>
     <mj-section padding="0">
       <mj-column><!-- Blank Column --></mj-column>
           <mj-column>
-          <mj-text mj-class="med-w sml grey semi-b" align="right">Total: <span style="color:black; font-weight:400;"mj-class="reg black">{{order.total.formatted_with_symbol}}</span></mj-text>
+          <mj-text mj-class="med-w grey semi-b" align="right">Total: <span style="color:black; font-weight:400;"mj-class="reg black">{{order.total.formatted_with_symbol}}</span></mj-text>
       </mj-column>
     </mj-section>
   
