@@ -34,7 +34,7 @@
       <!-- Colors -->
       <mj-class name="light-grey" color="#DCE4F3" />
       <mj-class name="grey" color="#8B9DBE" />
-      <mj-class name="black" color="black" />
+      <mj-class name="dark-grey" color="#3A465A" />
       <!-- Background colors -->
       <mj-class name="bg-grey" background-color="#F1F4FA" />
       <!-- Border -->
@@ -63,9 +63,9 @@
     <mj-section mj-class="section-white" padding-top="30px" padding-bottom="0">
       <mj-column>
         <mj-text mj-class="s-height">
-          Hi {{shipping.name}},<br />
+          Hi <strong>{{shipping.name}}</strong>,<br />
           Thanks for your recent order. Please find all the details below.<br />
-          If you have any questions, feel free to <a href="mailto:your email">contact us</a>.
+          If you have any questions, feel free to <a href="mailto:your email" style="color:#3A465A;">contact us</a>.
         </mj-text>
       </mj-column>
     </mj-section>
@@ -77,32 +77,36 @@
     
 
     <!-- Order Ref/Order Status -->
-    <mj-section>
-      <mj-column>
-          <mj-text mj-class="med-w sml grey semi-b" align="left" padding="10px 25px">Order Ref.: <span style="color:black; font-weight:400;"mj-class="reg black">{{customer_reference}}</span></mj-text>
+    <mj-section >
+      <mj-column >
+          <mj-text mj-class="sml grey semi-b" align="left" padding="5px 25px">Order Ref.: <span style="color:black; font-weight:400;"mj-class="reg black">{{customer_reference}}</span></mj-text>
       </mj-column>
       <mj-column>
-          <mj-text mj-class="med-w sml grey semi-b" align="right" padding="10px 25px">Order Status: <span style="color:black; font-weight:400;"mj-class="reg black">{{status_fulfillment}}</span></mj-text>
+          <mj-text mj-class="sml grey semi-b" align="right" padding="5px 25px">Order Status: <span style="color:black; font-weight:400;"mj-class="reg black">{{status_fulfillment}}</span></mj-text>
+          <mj-text mj-class="sml grey semi-b" align="right" padding="0 25px">Payment Status: <span style="color:black; font-weight:400;"mj-class="reg black">{{status_payment}}</span></mj-text>
       </mj-column>
     </mj-section>
     
     <!-- Customer Details section -->
     <mj-section mj-class="bg-grey" padding="20px 0">
       <mj-column>
-          <mj-text align="left" mj-class="med-w sml grey semi-b">Ordered on:</mj-text>
+          <mj-text align="left" mj-class="sml dark-grey semi-b" padding-bottom="5px">Ordered on:</mj-text>
           <mj-text padding-top="0" padding-bottom="0">{{created}}</mj-text>
       </mj-column>
       <mj-column >
-          <mj-text align="left"mj-class="med-w sml grey semi-b">Customer email:</mj-text>
+          <mj-text align="left"mj-class="sml dark-grey semi-b" padding-bottom="5px">Customer email:</mj-text>
           <mj-text padding-top="0" padding-bottom="0">{{customer.email}}</mj-text>
       </mj-column>
 
       <mj-column>
-          <mj-text mj-class="med-w sml grey semi-b">Shipping:</mj-text>
-          <mj-text padding-top="0" padding-bottom="0">{{shipping.name}}</mj-text>
-          <mj-text padding-top="0" padding-bottom="0">{{shipping.street}}</mj-text>
-          <mj-text padding-top="0" padding-bottom="0">{{shipping.town_city}}, {{shipping.county_state}}</mj-text>
-          <mj-text padding-top="0" padding-bottom="0">{{shipping.postal_zip_code}}, {{shipping.country}}</mj-text>
+        <mj-text mj-class="sml dark-grey semi-b" padding-bottom="5px">Shipping:
+        </mj-text>
+        <mj-text mj-class="s-height" padding-top="0" padding-bottom="0">
+          {{shipping.name}} <br />
+          {{shipping.street}} <br />
+          {{shipping.town_city}}, {{shipping.county_state}} <br />
+          {{shipping.postal_zip_code}}, {{shipping.country}} <br />
+        </mj-text>
       </mj-column>
 
     </mj-section>
@@ -119,10 +123,10 @@
 
     <!-- Item details -->
     <mj-section background-color="#ffffff" padding-left="50px" padding="10px 0">
-       <!-- Data -->
-      <mj-group  width="100%">
-        <mj-column>
-         <mj-text align="left">
+      <mj-group>
+        <!-- Item -->
+        <mj-column width="50%">
+         <mj-text align="left" mj-class="dark-grey">
           <strong>Item</strong>
           <mj-spacer height="20px" />
           </mj-text>
@@ -133,8 +137,8 @@
           </mj-text>
         </mj-column>
         <!-- Qty -->
-        <mj-column>
-          <mj-text align="center">
+        <mj-column width="20%">
+          <mj-text align="center" mj-class="dark-grey">
           <strong>Qty</strong>
           <mj-spacer height="20px" />
           </mj-text>
@@ -145,8 +149,8 @@
           </mj-text>
         </mj-column>
         <!-- Price -->
-        <mj-column>
-        <mj-text align="right">
+        <mj-column width="30%">
+        <mj-text align="right" >
           <strong>Price</strong>
           <mj-spacer height="20px" />
           </mj-text>
@@ -205,14 +209,25 @@
     </mj-section>
     <mj-section background-color="#ffffff" padding="0">
       <mj-column>
-        <mj-text mj-class="med-w sml semi-b">Billing Details</mj-text>
-          <mj-text padding-top="0" padding-bottom="0">{{client_details.city}} {{client_details.postal_zip_code}}</mj-text>
-          <mj-text padding-top="0" padding-bottom="0">{{client_details.country_name}}</mj-text>
+        <mj-text mj-class="sml semi-b dark-grey">Billing Address</mj-text>
+        <mj-text padding-top="0" padding-bottom="0" mj-class="s-height">
+          {{#payments}}
+            {{payment_source.billing_zip_postal_code}} 
+          {{/payments}}
+          <br/>
+          {{#payments}}
+            {{payment_source.tax_billing_country}} 
+          {{/payments}}
+        </mj-text>
       </mj-column>
 
       <mj-column>
-        <mj-text mj-class="med-w sml semi-b">Payment Details</mj-text>
-          <mj-text padding-top="0" padding-bottom="0">{{payments.payment_source.brand}} **** **** **** {{payments.reference}}</mj-text>
+        <mj-text mj-class="sml semi-b dark-grey">Payment Details</mj-text>
+          <mj-text padding-top="0" padding-bottom="0">
+            {{#payments}}
+              {{payment_source.brand}} **** **** **** {{reference}}
+            {{/payments}}
+          </mj-text>
       </mj-column>
     </mj-section>
 
