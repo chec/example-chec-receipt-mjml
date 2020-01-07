@@ -1,6 +1,6 @@
 # Chec e-receipt email template with MJML 
 
-This is a basic tutorial of creating your own custom e-receipt for your customers who have just made a purchase on your Chec e-Commerce website. We will be using MJML, an email templating framework to help with design and formatting. Be sure to give a read-over of [MJML docs](https://mjml.io/documentation/) to familiarize yourself a bit with MJML syntax. The best thing about MJML is the responsive templating, all tags and attributes are responsive, eliminating the hassle (because who really loves coding emails amiright) and thus giving time to actually code out your receipt data to your customers.  
+This is a basic tutorial of creating your own custom e-receipt for your customers who have just made a purchase on your Chec e-Commerce website. Customized order receipts help to engage your customers, reassure that the purchase made on your website was indeed successful and also help to generate future purchases. We will be using MJML, an email templating framework to help with design and formatting. Be sure to give a read-over of [MJML docs](https://mjml.io/documentation/) to familiarize yourself a bit with MJML syntax. The best thing about MJML is the responsive templating, all tags and attributes are responsive, eliminating the hassle (because who really loves coding emails amiright) and thus giving time to actually code out your receipt data to your customers.  
 
 We have made up this boilerplate template for you to start with. This bareboned template lays out all the necessary details your customer would look for in an e-receipt/invoice. So go head, clone this template and make it your own!
 
@@ -14,6 +14,24 @@ There are several different ways of installing and using MJML. For the sake of t
 * NPM or yarn
 * MJML extension on code editor
 * Basic knowledge of HTML syntax
+
+## What this email template includes:
+
+- Your custom company logo
+- Customer reference number
+- Order status
+- Payment status
+- Order date
+- Customer email
+- Shipping address
+- Ordered items:
+  - Product name
+  - Quantity
+  - Price
+- Order Total 
+- Billing address
+- Payment details
+- Thank you footer
 
 ## Lets start!
 
@@ -46,6 +64,7 @@ For this tutorial, we have pulled in data from a Chec demo store. Working with a
 
 ## Let's dive a bit deeper
 
+We will deliberately be leaving out details on MJML syntax and instead focus on the overall concept of structuring out your receipt content and working with your receipt data. Depending on the email client you are using to send your receipts, some services allow you to directly fetch your receipt object from the client's API upon every successful successful payment. You could also alternatively send your receipts manually from the Chec dashboard. 
 
 
 ## Build your receipt template
@@ -56,13 +75,13 @@ After you've made your changes and are ready to render the MJML template out int
 
 `mjml -r template.mjml -o template.html`
 
-`template.mjml` is the input file and template.html is the `output file` where the rendered HTML goes.
+`template.mjml` is the input file and `template.html` is the output file where the rendered HTML goes.
 
 With the generated HTML, you can now send your responsive receipt with your email client service or directly from your shell. 
 
 ## The finish line
 
-And there you have it! See, we told you it was easy as pie, or did we not? Well now you know, how simple it is to create your own customized e-receipt to send to your valued customers. 
+And there you have it! See, we told you it was easy as pie, or did we not? Well now you know, how simple it is to create your own customized Chec e-receipt to send to your valued customers. 
 
 Thank you for walking through the tutorial with us!
 
