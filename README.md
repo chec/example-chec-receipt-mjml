@@ -68,7 +68,7 @@ We will deliberately be leaving out details on MJML syntax and instead focus on 
 
 ### Let's take a look at our index code
 
-```
+```javascript
 <!-- Include Handlebars CDN -->
 <script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
@@ -90,9 +90,12 @@ We will deliberately be leaving out details on MJML syntax and instead focus on 
 </script>
 
 <div id="render"></div>
-
 ```
+1. First we need to include the `handlebars.js` CDN as well as the minified jquery if you are sticking to writing this code in jQuery.
 
+2. We then write a function to compile the json data and template into HTML.
+
+3. Lastly, we create an empty `div` to output the rendered email template.
 
 ## Build your receipt template
 
