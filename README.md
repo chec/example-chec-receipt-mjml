@@ -29,19 +29,41 @@ The first step is clone this repository locally. To do so follow these steps:
 
 3. You now have a local copy of the merchant receipt template in your directory!
 
-### Some things to note
+## Some things to note
 
 Since you will be scaffolding this project and customizing it to fit the design of your e-receipt, we will go through a few explanations and things to note about the setup, structure and files on this project.
 
-Be sure you have MJML installed otherwise you will not be able to use MJML tags and have them rendered into HTML. 
+Be sure you have MJML installed otherwise you will not be able to use the built-in MJML tags and have them rendered into HTML. 
 
 As you can see our project folder includes:
 
 - `template.mjml` which is the native MJML file that we will be coding out our receipt content
-- `template.html` is where the HTML code is rendered out onto with the MJML machine
+- `template.html` is where the HTML code is transpiled with the MJML machine
 - `data.json` is where our Chec receipt object data is being pulled from
 - `index.html` is where we are including the `handlebars.js` CDN to parse our receipt object data in the mustache expressions into actual values
 
+For this tutorial, we have pulled in data from a Chec demo store. Working with an actual receipt object, we can then use dot notations in the handlebars expression correctly to execute the property values onto our template.  
 
+## Let's dive a bit deeper
+
+
+
+## Build your receipt template
+
+MJML comes built in with its own CLI to easily build your template.
+
+After you've made your changes and are ready to render the MJML template out into HTML, you can run the command below:
+
+`mjml -r template.mjml -o template.html`
+
+`template.mjml` is the input file and template.html is the `output file` where the rendered HTML goes.
+
+With the generated HTML, you can now send your responsive receipt with your email client service or directly from your shell. 
+
+## The finish line
+
+And there you have it! See, we told you it was easy as pie, or did we not? Well now you know, how simple it is to create your own customized e-receipt to send to your valued customers. 
+
+Thank you for walking through the tutorial with us!
 
 
