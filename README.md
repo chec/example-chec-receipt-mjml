@@ -103,7 +103,27 @@ MJML based its syntax off of HTML, so there are definitely similarities in the w
 
 To make it easy for you to get up and running, we have utilized the custom components features in MJML in the `mj-attributes` tag. Feel free to add to or change any class components you wish according to the design of your email receipt.
 
-As we go down the code, we have our first mustache expression `{{shipping.name}}`.
+As we go down the code, we have our first mustache expression `{{shipping.name}}`. When you refer to the full json data, you can see that `shipping` is the fifth data object in our order object. The dot notation after `shipping` takes a level deeper in the  nested object property `name` where we can then parse out the actual value. The rest of the mustache expressions are written in the same structure. Well what happens when you need to loop through more complex data like nested property array items like the `order` object:
+
+```javascript
+"order": {
+    "line_items": [
+        {
+        "id": "item_7RyWOwmK5nEa2V",
+        "product_id": "prod_7ZAMo136xlNJ4x",
+        "product_name": "Phone Case",
+        "quantity": 1,
+        "price": {
+            "raw": 55,
+            "formatted": "55.00",
+            "formatted_with_symbol": "$55.00",
+            "formatted_with_code": "55.00 USD"
+            },
+        }
+    ]
+}
+```
+
 
 ## Running build to finish your email receipt
 
