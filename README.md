@@ -6,7 +6,7 @@ We have made up this boilerplate template for you to start with. This bareboned 
 
 ![Demo Image](demo-receipt.png)
 
-# What you will need to start this project
+## What you will need to start this project
 
 There are several different ways of installing and using MJML. For the sake of this tutorial and for a quick start, we chose to download MJML as a plugin in Visual Studio Code. Check out https://mjml.io/documentation/#usage for other usages.
 
