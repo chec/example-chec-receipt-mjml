@@ -11,6 +11,19 @@ We have made up this boilerplate template for you to start with. This bareboned 
 There are several different ways of installing and using MJML. For the sake of this tutorial and for a quick start, we chose to download MJML as a plugin in Visual Studio Code. Check out https://mjml.io/documentation/#usage for other usages.
 
 <ul>
-  <li>Code Editor: VSCode, Atom, Sublime</li>
-  <li>Download MJML extension on your code editor</li>
+  <li>IDE Code Editor: VSCode, Atom, Sublime</li>
+  <li>MJML extension on code editor</li>
+  <li>Basic knowledge of HTML syntax</li>
 </ul>
+
+## Lets start!
+
+The first step is clone this repository locally. To do so follow these steps:
+
+<ol>
+  <li>Open your Terminal window and navigate into your local directory where you want this repo to live</li>
+  <li>Once you're in the directory, type in `git clone https://github.com/chec/chec-receipt.git`</li>
+  <li>Basic knowledge of HTML syntax</li>
+</ol>
+
+### Some things to note
