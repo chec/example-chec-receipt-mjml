@@ -20,11 +20,19 @@ There are several different ways of installing and using MJML. For the sake of t
 
 The first step is clone this repository locally. To do so follow these steps:
 
+<ol>
+  <li>test</li>
+</ol>
+
 Open your Terminal window and navigate into your local directory where you want clone this repo
 
 Once you're in the directory, type in:
 
 ``` git clone https://github.com/chec/chec-receipt.git ```
+
+<ol>
+  <li>test</li>
+</ol>
 
 
 ### Some things to note
