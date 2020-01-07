@@ -51,7 +51,7 @@
       <mj-column>
         <!-- Insert Logo -->
         <!-- Add src="url" as an attribute -->
-        <mj-image align="left" padding="10px 30px" src="" target="_blank" width="160px" alt="logo"></mj-image>
+        <mj-image align="left" padding="10px 30px" src="https://chec.nyc3.digitaloceanspaces.com/email/assets/marketing/logo.png" target="_blank" width="110px" alt="logo"></mj-image>
         <!-- Insert Logo END -->
       </mj-column>
       <mj-column>
