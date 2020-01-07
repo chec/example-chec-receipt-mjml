@@ -97,7 +97,15 @@ We will deliberately be leaving out details on MJML syntax and instead focus on 
 
 3. Lastly, we create an empty `div` to output the rendered email template.
 
-## Build your receipt template
+### Now let's have a look at template.mjml
+
+MJML based its syntax off of HTML, so there are definitely similarities in the way a MJML file is structured and nested.
+
+To make it easy for you to get up and running, we have utilized the custom components features in MJML in the `mj-attributes` tag. Feel free to add to or change any class components you wish according to the design of your email receipt.
+
+As we go down the code, we have our first mustache expression `{{shipping.name}}`.
+
+## Running build to finish your email receipt
 
 MJML comes built in with its own CLI to easily build your template.
 

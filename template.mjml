@@ -49,8 +49,7 @@
     <mj-wrapper mj-class="grey-border">
     <mj-section background-color="white" padding-bottom="0px" padding-top="20px" padding="20px 0">
       <mj-column>
-        <!-- Insert Logo -->
-        <!-- Add src="url" as an attribute -->
+        <!-- Insert your custom logo -->
         <mj-image align="left" padding="10px 30px" src="https://chec.nyc3.digitaloceanspaces.com/email/assets/marketing/logo.png" target="_blank" width="110px" alt="logo"></mj-image>
         <!-- Insert Logo END -->
       </mj-column>
@@ -59,7 +58,7 @@
       </mj-column>
     </mj-section>
 
-    <!-- Greeting -->
+    <!-- Insert your custom greeting -->
     <mj-section mj-class="section-white" padding-top="30px" padding-bottom="0">
       <mj-column>
         <mj-text mj-class="s-height">
@@ -87,7 +86,7 @@
       </mj-column>
     </mj-section>
     
-    <!-- Customer Details section -->
+    <!-- Customer details section -->
     <mj-section mj-class="bg-grey" padding="20px 0">
       <mj-column>
           <mj-text align="left" mj-class="sml dark-grey semi-b" padding-bottom="5px">Ordered on:</mj-text>
