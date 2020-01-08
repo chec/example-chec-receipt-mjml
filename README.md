@@ -128,7 +128,9 @@ As we go down the code, we have our first mustache expression `{{shipping.name}}
 }
 ```
 
-Fortunately for us, handlebars comes fully packed with [Block Helpers](https://handlebarsjs.com/guide/block-helpers.html#basic-blocks). > Block helpers make it possible to define custom iterators and other functionality that can invoke the passed block with a new context. This seems like best use case to iterate through our deeply nested properties. 
+Fortunately for us, handlebars comes fully packed with [Block Helpers](https://handlebarsjs.com/guide/block-helpers.html#basic-blocks). 
+
+> Block helpers make it possible to define custom iterators and other functionality that can invoke the passed block with a new context. This seems like best use case to iterate through our deeply nested properties. 
 
 You can loop through the order object properties by invoking the parent object like so `{{#order}}`
 
