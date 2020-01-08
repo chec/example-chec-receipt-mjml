@@ -103,7 +103,9 @@ MJML based its syntax off of HTML, so there are definitely similarities in the w
 
 To make it easy for you to get up and running, we have utilized the custom components features in MJML in the `mj-attributes` tag. Feel free to add to or change any class components you wish according to the design of your email receipt.
 
-As we go down the code, we have our first mustache expression `{{shipping.name}}`. When you refer to the full json data, you can see that `shipping` is the fifth data object in our order object. The dot notation after `shipping` takes a level deeper in the  nested object property `name` where we can then parse out the actual value. The rest of the mustache expressions are written in the same structure. Well what happens when you need to loop through more complex data like nested property array items like the `order` object:
+We have injected mustache expressions throughout our email template to parse our receipt data. We enter into JavaScript land with anything wrapped between the double curly braces. Note that the mustache expressions are not unique to MJML. 
+
+As we go down the code, we have our first mustache expression `{{shipping.name}}`. When you refer to the full json data, you can see that `shipping` is the fifth data object. The dot notation after `shipping` takes us a level deeper into the nested object property `name` where we can then parse out the actual value. The rest of the mustache expressions are written in the same structure. Well what happens when you need to loop through more complex data like nested property array items such as the `order` object:
 
 ```javascript
 "order": {
@@ -124,6 +126,23 @@ As we go down the code, we have our first mustache expression `{{shipping.name}}
 }
 ```
 
+Fortunately for us, handlebars comes fully packed with [Block Helpers](https://handlebarsjs.com/guide/block-helpers.html#basic-blocks). > Block helpers make it possible to define custom iterators and other functionality that can invoke the passed block with a new context. This seems like best use case to iterate through our deeply nested properties. 
+
+You can loop through the order object properties by invoking the parent object like so `{{#order}}`
+
+```
+{{#order.line_items}}
+    {{product_name}} 
+{{/order.line_items}}
+```
+
+Alternatively, you can use the `#with` helper to avoid repeating the parent object: 
+
+```
+{{#with order.line_items}}
+    {{product_name}} 
+{{/with}}
+```
 
 ## Running build to finish your email receipt
 
