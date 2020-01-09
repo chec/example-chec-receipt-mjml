@@ -41,11 +41,15 @@ The first step is clone this repository locally. To do so follow these steps:
 
 1. Open your Terminal window and type:
 
-``` git clone https://github.com/chec/chec-receipt.git ```
+``` 
+git clone https://github.com/chec/chec-receipt.git 
+```
 
 2. Navigate into the repo:
 
-``` cd chec-receipt ```
+``` 
+cd chec-receipt 
+```
 
 3. You now have a local copy of the merchant receipt template in your directory!
 
@@ -154,7 +158,9 @@ MJML comes built in with its own CLI to easily build your template.
 
 After you've made your changes and are ready to render the MJML template out into HTML, you can run the command below:
 
-`mjml -r template.mjml -o template.html`
+```
+mjml -r template.mjml -o template.html
+```
 
 `template.mjml` is the input file and `template.html` is the output file where the rendered HTML goes.
 
