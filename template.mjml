@@ -32,9 +32,9 @@
       <mj-class name="r-height" line-height="25px" />
       <mj-class name="s-height" line-height="20px" />
       <!-- Colors -->
-      <mj-class name="light-grey" color="#DCE4F3" />
-      <mj-class name="grey" color="#8B9DBE" />
-      <mj-class name="dark-grey" color="#3A465A" />
+      <mj-class name="light-grey" color="#D3E0F1" />
+      <mj-class name="grey" color="#7187A5" />
+      <mj-class name="dark-grey" color="#41556C" />
       <!-- Background colors -->
       <mj-class name="bg-grey" background-color="#F1F4FA" />
       <!-- Border -->
@@ -81,8 +81,8 @@
           <mj-text mj-class="sml grey semi-b" align="left" padding="5px 25px">Order Ref.: <span style="color:black; font-weight:400;"mj-class="reg black">{{customer_reference}}</span></mj-text>
       </mj-column>
       <mj-column>
-          <mj-text mj-class="sml grey semi-b" align="right" padding="5px 25px">Order Status: <span style="color:black; font-weight:400;"mj-class="reg black">{{status_fulfillment}}</span></mj-text>
-          <mj-text mj-class="sml grey semi-b" align="right" padding="0 25px">Payment Status: <span style="color:black; font-weight:400;"mj-class="reg black">{{status_payment}}</span></mj-text>
+          <mj-text mj-class="sml grey semi-b" align="right" padding="5px 25px">Order Status: <span style="color:black; font-weight:400;"mj-class="reg black">{{titlecase status_fulfillment}}</span></mj-text>
+          <mj-text mj-class="sml grey semi-b" align="right" padding="0 25px">Payment Status: <span style="color:black; font-weight:400;"mj-class="reg black">{{titlecase status_payment}}</span></mj-text>
       </mj-column>
     </mj-section>
     
@@ -121,7 +121,7 @@
     </mj-section>
 
     <!-- Item details -->
-    <mj-section background-color="#ffffff" padding-left="50px" padding="10px 0">
+    <mj-section background-color="#ffffff" padding="10px 0">
       <mj-group>
         <!-- Item -->
         <mj-column width="50%">
@@ -207,9 +207,12 @@
       </mj-column>
     </mj-section>
     <mj-section background-color="#ffffff" padding="0">
+  
       <mj-column>
         <mj-text mj-class="sml semi-b dark-grey">Billing Address</mj-text>
         <mj-text padding-top="0" padding-bottom="0" mj-class="s-height">
+        {{#if collected.billing_address}}
+
           {{#payments}}
             {{payment_source.billing_zip_postal_code}} 
           {{/payments}}
@@ -217,14 +220,23 @@
           {{#payments}}
             {{payment_source.tax_billing_country}} 
           {{/payments}}
+
+          {{/if}}
+
+        {{#unless collected.billing_address}}  
+          No billing address was collected       
+        {{/unless}}
         </mj-text>
+        
       </mj-column>
+      
 
       <mj-column>
         <mj-text mj-class="sml semi-b dark-grey">Payment Details</mj-text>
           <mj-text padding-top="0" padding-bottom="0">
+
             {{#payments}}
-              {{payment_source.brand}} **** **** **** {{reference}}
+              {{titlecase payment_source.brand}} **** **** **** {{reference}}
             {{/payments}}
           </mj-text>
       </mj-column>
@@ -239,7 +251,7 @@
     <mj-section>
       <mj-column >
         <mj-text align="center" mj-class="sml">Thank you for your order!</mj-text>
-        <mj-text align="center" mj-class="x-sml grey">If you have any questions about your bill, please get in touch with us by replying to this email!</mj-text>
+        <mj-text align="center" mj-class="x-sml grey r-height">If you have any questions about your bill, please get in touch with us by replying to this email!</mj-text>
       </mj-column>
     </mj-section>
   </mj-wrapper>
