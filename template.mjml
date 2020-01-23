@@ -90,7 +90,7 @@
     <mj-section mj-class="bg-grey" padding="20px 0">
       <mj-column>
           <mj-text align="left" mj-class="sml dark-grey semi-b" padding-bottom="5px">Ordered on:</mj-text>
-          <mj-text padding-top="0" padding-bottom="0">{{created}}</mj-text>
+          <mj-text padding-top="0" padding-bottom="0">{{date created}}</mj-text>
       </mj-column>
       <mj-column >
           <mj-text align="left"mj-class="sml dark-grey semi-b" padding-bottom="5px">Customer email:</mj-text>
