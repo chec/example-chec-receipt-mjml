@@ -1,4 +1,4 @@
-# Chec e-receipt email template with MJML 
+# Example Chec e-receipt email template with MJML 
 
 This is a basic tutorial of creating your own custom e-receipt for your customers who have just made a purchase on your Chec e-Commerce website. Customized order receipts help to engage your customers, confirm that the purchase made on your website was successful and also help to generate future purchases. 
 
@@ -42,13 +42,13 @@ The first step is clone this repository locally. To do so follow these steps:
 1. Open your Terminal window and type:
 
 ``` 
-git clone https://github.com/chec/chec-receipt.git 
+git clone https://github.com/chec/example-chec-receipt-mjml.git email-receipt-template
 ```
 
 2. Navigate into the repo:
 
 ``` 
-cd chec-receipt 
+cd email-receipt-template
 ```
 
 3. You now have a local copy of the merchant receipt template in your directory!
