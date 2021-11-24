@@ -172,4 +172,7 @@ And there you have it! See, we told you it was easy as pie, or did we not? Well 
 
 Thank you for walking through the tutorial with us!
 
+## ⚠️ Note
 
+### This repository is no longer maintained
+However, we will accept issue reports and contributions for this repository. See the [contribute to the commerce community](https://commercejs.com/docs/community/contribute) page for more information on how to contribute to our open source projects. For update-to-date APIs, please check the latest version of the [API documentation](https://commercejs.com/docs/api/).
